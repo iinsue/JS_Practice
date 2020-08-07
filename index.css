@@ -1,3 +1,61 @@
-body {
-  color: black;
+#time {
+  overflow: hidden;
+  text-align: center;
+}
+#time:before,
+#time:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+#time:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+#time:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+#today {
+  text-align: center;
+}
+#today:before,
+#today:after {
+  content: "\00a0\00a0\00a0";
+  text-decoration: line-through;
+  margin: 10px;
+}
+
+#xmas {
+  text-align: center;
+}
+#xmas:before,
+#xmas:after {
+  content: "\00a0\00a0\00a0";
+  text-decoration: line-through;
+  margin: 10px;
+}
+
+#santa {
+  display: flex;
+  flex-direction: row;
+}
+#santa:before,
+#santa:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #000;
+  margin: auto;
+}
+
+#santa:before {
+  margin-right: 10px;
+}
+#santa:after {
+  margin-left: 10px;
 }
